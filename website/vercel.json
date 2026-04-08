@@ -7,7 +7,9 @@
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/start", "destination": "/start.html" },
-    { "source": "/dashboard", "destination": "/dashboard.html" }
+    { "source": "/welcome", "destination": "/welcome.html" },
+    { "source": "/dashboard", "destination": "/dashboard.html" },
+    { "source": "/live/:slug", "destination": "/client-live.html" }
   ],
   "headers": [
     {

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaCMO — Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#000;--t1:#fff;--t2:#b0b0b0;--t3:#777;--green:#00ff88;--green-d:rgba(0,255,136,.15);--border:#1a1a1a;--f:'Inter',sans-serif}
+        body{background:var(--bg);color:var(--t1);font-family:var(--f);min-height:100vh}
+        body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+        nav{position:relative;z-index:2;padding:16px 24px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+        nav .logo{font-size:20px;font-weight:900;letter-spacing:-.5px;color:var(--t1);text-decoration:none}
+        .wrap{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:48px 24px}
+        .check{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:var(--green-d);margin:0 auto 24px;font-size:28px}
+        h1{font-size:32px;font-weight:900;letter-spacing:-1px;text-align:center;margin-bottom:8px}
+        .sub{font-size:17px;color:var(--t2);text-align:center;line-height:1.6;margin-bottom:48px}
+        .steps{margin-bottom:48px}
+        .step{display:flex;gap:16px;margin-bottom:24px}
+        .step-n{width:32px;height:32px;border-radius:50%;background:var(--green-d);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px}
+        .step h3{font-size:16px;font-weight:700;margin-bottom:4px}
+        .step p{font-size:15px;color:var(--t2);line-height:1.6}
+        .step a{color:var(--green);text-decoration:none;font-weight:600}
+        .step a:hover{text-decoration:underline}
+        .divider{height:1px;background:var(--border);margin:48px 0}
+
+        /* GHL Calendar Embed Area */
+        .booking{background:#0a0a0a;border:1px solid var(--border);border-radius:12px;padding:32px;text-align:center;margin-bottom:48px}
+        .booking h2{font-size:22px;font-weight:800;margin-bottom:8px}
+        .booking p{font-size:15px;color:var(--t2);margin-bottom:24px}
+        .booking .embed-placeholder{background:#111;border:1px dashed #333;border-radius:8px;padding:48px 24px;color:var(--t3);font-size:14px}
+
+        footer{border-top:1px solid var(--border);padding:24px;text-align:center}
+        footer p{font-size:12px;color:var(--t3)}
+        @media(max-width:640px){.wrap{padding:32px 20px}h1{font-size:26px}}
+    </style>
+</head>
+<body>
+<nav><a class="logo" href="/">AlphaCMO</a></nav>
+
+<div class="wrap">
+    <div class="check">✓</div>
+    <h1>You're in.</h1>
+    <p class="sub">Welcome to AlphaCMO. Your AI CMO is being set up right now. Here's what happens next — it takes less than 10 minutes of your time.</p>
+
+    <div class="steps">
+        <div class="step">
+            <div class="step-n">1</div>
+            <div>
+                <h3>Fill out your brand questionnaire</h3>
+                <p>Tell us about your brand voice, audience, and the hashtags you want to monitor. Takes 5 minutes.</p>
+                <p style="margin-top:8px"><a href="YOUR_GOOGLE_FORM_URL" target="_blank">Complete questionnaire →</a></p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-n">2</div>
+            <div>
+                <h3>Book your onboarding call</h3>
+                <p>A quick 15-minute call to confirm your brand voice, choose your avatar, and set your hashtags. We handle everything after that.</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-n">3</div>
+            <div>
+                <h3>Connect on Telegram</h3>
+                <p>After your onboarding call, we'll send you a Telegram link. Click it, press Start, and you're connected to AlphaCMO. That's it — 30 seconds.</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-n">4</div>
+            <div>
+                <h3>Wake up to your first scout report</h3>
+                <p>AlphaCMO scans your niche at 2AM every night. By morning, you'll have viral scripts ready to review. Type "promote" to start your first video.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GHL BOOKING CALENDAR EMBED -->
+    <div class="booking">
+        <h2>Book Your Onboarding Call</h2>
+        <p>Pick a time that works. We'll get your AI CMO configured and running.</p>
+        <div class="embed-placeholder">
+            <!-- REPLACE THIS DIV WITH YOUR GHL CALENDAR EMBED CODE -->
+            <!-- Example: -->
+            <!-- <iframe src="https://api.leadconnectorhq.com/widget/booking/YOUR_CALENDAR_ID" style="width:100%;border:none;overflow:hidden;min-height:600px" scrolling="no"></iframe> -->
+            GHL Calendar Embed Goes Here
+        </div>
+    </div>
+
+    <div style="text-align:center;padding:24px 0">
+        <p style="font-size:15px;color:var(--t2)">Questions? Email <a href="mailto:support@alphacmo.ai" style="color:var(--green);text-decoration:none">support@alphacmo.ai</a></p>
+    </div>
+</div>
+
+<footer><p>© 2026 AlphaCMO · New Empire AI</p></footer>
+</body>
+</html>
