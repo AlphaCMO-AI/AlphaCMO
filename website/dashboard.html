@@ -142,19 +142,20 @@
         <div class="section">
             <div class="section-h"><span>✅</span> Getting Started</div>
             <div id="checklist">
-                <div class="check-item" id="step-telegram">
+                <div class="check-item" id="step-brand">
                     <div class="check-box">1</div>
+                    <div class="check-body">
+                        <h4>Complete your brand questionnaire</h4>
+                        <p>Tell us your brand's tone, target audience, key phrases, topics to avoid, and call-to-action style. Takes 5 minutes — this is how your agent learns your voice.</p>
+                        <a class="action" id="brandFormLink" href="https://alphacmo.ai/onboarding" target="_blank">Fill out questionnaire →</a>
+                    </div>
+                </div>
+                <div class="check-item" id="step-telegram">
+                    <div class="check-box">2</div>
                     <div class="check-body">
                         <h4>Open your Telegram bot</h4>
                         <p>Tap the link and press Start. This is your direct line to your AI agent. Say "hello" — your agent will introduce itself.</p>
                         <a class="action" id="stepBotLink" href="#" target="_blank">Open in Telegram →</a>
-                    </div>
-                </div>
-                <div class="check-item" id="step-brand">
-                    <div class="check-box">2</div>
-                    <div class="check-body">
-                        <h4>Set up your brand voice</h4>
-                        <p>Tell your agent your tone, target audience, key phrases, phrases to avoid, and call-to-action style. Just message your brand details naturally.</p>
                     </div>
                 </div>
                 <div class="check-item" id="step-hashtags">
@@ -182,13 +183,13 @@
         </div>
 
         <div class="help">
-            <p>Need help? Message your agent in Telegram or email <a href="mailto:brian@alphacmo.ai">brian@alphacmo.ai</a></p>
+            <p>Need help? Message your agent in Telegram or email <a href="/cdn-cgi/l/email-protection#dbb9a9b2bab59bbab7abb3bab8b6b4f5bab2"><span class="__cf_email__" data-cfemail="9cfeeef5fdf2dcfdf0ecf4fdfff1f3b2fdf5">[email&#160;protected]</span></a></p>
         </div>
 
     </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ============================================================
 // SUPABASE CONFIG — REPLACE THESE
 // ============================================================
@@ -315,12 +316,4 @@ async function init() {
 
     setInterval(async () => {
         const ev = await sbGet('events', 'customer_id=eq.' + CID + '&order=created_at.asc&limit=100');
-        showEvents(ev);
-        if (polling) { const c = await sbGet('customers', 'id=eq.' + CID + '&limit=1'); if (c.length) showCustomer(c[0]); }
-    }, polling ? 3000 : 30000);
-}
-
-if (CID && CID !== 'dashboard') init();
-</script>
-</body>
-</html>
+        sh
