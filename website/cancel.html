@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaCMO — Payment Cancelled</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--bg:#000;--bg2:#0a0a0a;--bg3:#111;--t1:#fff;--t2:#aaa;--t3:#666;--green:#00ff88;--green-d:rgba(0,255,136,.12);--green-g:rgba(0,255,136,.25);--red:#ff4444;--red-d:rgba(255,68,68,.15);--border:#1a1a1a}
+        html{font-size:16px;-webkit-font-smoothing:antialiased}
+        body{background:var(--bg);color:var(--t1);font-family:'Inter',sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+        body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0}
+
+        .card{position:relative;z-index:1;max-width:480px;width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+
+        /* Top section */
+        .card-top{padding:36px 32px 24px;text-align:center}
+        .x-circle{width:56px;height:56px;border-radius:50%;background:var(--red-d);display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+        .x-circle svg{width:28px;height:28px;stroke:var(--red);stroke-width:2.5}
+        .card-top h1{font-size:22px;font-weight:800;letter-spacing:-.5px;margin-bottom:8px}
+        .card-top .sub1{font-size:14px;color:var(--t2);margin-bottom:6px}
+        .card-top .sub2{font-size:13px;color:var(--t3);line-height:1.6;max-width:360px;margin:0 auto}
+
+        /* Benefits box */
+        .benefits{margin:0 24px 20px;padding:24px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px}
+        .benefits h3{font-size:13px;font-weight:700;text-align:center;margin-bottom:16px}
+        .ben-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0}
+        .ben-check{color:var(--green);font-size:16px;font-weight:700;flex-shrink:0;margin-top:1px}
+        .ben-text{font-size:13px;font-weight:600;line-height:1.4}
+        .ben-text small{display:block;font-weight:400;font-size:12px;color:var(--t3);margin-top:2px}
+        .ben-list{padding-left:28px;margin-top:6px}
+        .ben-list-item{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px;color:var(--t2)}
+        .ben-list-item span{font-size:14px}
+        .ben-soon{font-size:11px;color:var(--green);font-style:italic;margin-top:4px;padding-left:28px}
+
+        /* Help box */
+        .help-box{margin:0 24px 20px;padding:16px 20px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px}
+        .help-box h4{font-size:13px;font-weight:700;margin-bottom:6px}
+        .help-box p{font-size:12px;color:var(--t3);line-height:1.6}
+        .help-box a{color:var(--green);text-decoration:none}
+
+        /* Buttons */
+        .btn-group{padding:0 24px 32px}
+        .btn-primary{display:block;width:100%;padding:16px;font-family:inherit;font-size:15px;font-weight:700;color:#000;background:var(--green);border:none;border-radius:10px;cursor:pointer;transition:all .2s;text-decoration:none;text-align:center;margin-bottom:10px}
+        .btn-primary:hover{background:#00e67a;box-shadow:0 0 30px var(--green-g)}
+        .btn-secondary{display:block;width:100%;padding:14px;font-family:inherit;font-size:14px;font-weight:600;color:var(--t1);background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;text-decoration:none;text-align:center}
+        .btn-secondary:hover{background:rgba(255,255,255,.06);border-color:var(--t3)}
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-top">
+        <div class="x-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </div>
+        <h1>Launch Plan Payment Cancelled</h1>
+        <div class="sub1">Your subscription was not activated.</div>
+        <div class="sub2">No worries! The Launch plan is still available. You can complete your purchase whenever you're ready to unlock your AI video engine.</div>
+    </div>
+
+    <div class="benefits">
+        <h3>What You Would Have Unlocked:</h3>
+
+        <div class="ben-item">
+            <span class="ben-check">✓</span>
+            <div class="ben-text">30 AI Avatar Videos / Month<small>1080×1920 vertical with branded overlays + synced captions</small></div>
+        </div>
+
+        <div class="ben-item">
+            <span class="ben-check">✓</span>
+            <div class="ben-text">Full Autonomous Pipeline</div>
+        </div>
+        <div class="ben-list">
+            <div class="ben-list-item"><span>🔍</span> Nightly Trend Scouting</div>
+            <div class="ben-list-item"><span>✍️</span> Brand Voice Script Rewriting</div>
+            <div class="ben-list-item"><span>🎬</span> AI Avatar Video Generation</div>
+            <div class="ben-list-item"><span>📲</span> Instagram Reels Auto-Publishing</div>
+            <div class="ben-list-item"><span>💬</span> Dedicated Telegram Channel</div>
+            <div class="ben-list-item"><span>📊</span> Live Pipeline Dashboard</div>
+        </div>
+        <div class="ben-soon">TikTok + YouTube Shorts coming soon</div>
+
+        <div class="ben-item" style="margin-top:8px">
+            <span class="ben-check">✓</span>
+            <div class="ben-text">Priority support</div>
+        </div>
+    </div>
+
+    <div class="help-box">
+        <h4>Need help?</h4>
+        <p>If you encountered any issues during the payment process or have questions about our plans, contact us at <a href="mailto:brian@nlvl.co">brian@nlvl.co</a></p>
+    </div>
+
+    <div class="btn-group">
+        <a href="/checkout" class="btn-primary">Try Launch Plan Again →</a>
+        <a href="/live" class="btn-secondary">Return to AlphaCMO</a>
+    </div>
+</div>
+
+</body>
+</html>
