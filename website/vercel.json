@@ -6,6 +6,8 @@
     { "source": "/sign-in", "destination": "/sign-in.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/checkout", "destination": "/checkout.html" },
+    { "source": "/cancel", "destination": "/cancel.html" },
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/start", "destination": "/start.html" },
