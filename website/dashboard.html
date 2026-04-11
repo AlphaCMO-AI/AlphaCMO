@@ -200,7 +200,7 @@ const SB_KEY = 'sb_publishable_Ll3KUfVgGqeCMUTSlAd4bA_YoD-SHkA';
 const path = window.location.pathname.replace(/\/+$/, '').split('/');
 const CID = path[path.length - 1];
 
-if (!CID || CID === 'dashboard') {
+if (!CID || CID === 'dashboard' || CID === 'live') {
     document.getElementById('loadingState').style.display = 'none';
     document.getElementById('errorState').style.display = 'block';
 }
